@@ -81,7 +81,7 @@
     "react-styleguidist": "^10.6.2",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
-    "stylelint": "^13.1.0",
+    "stylelint": "^13.2.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-recommended-scss": "^4.2.0",

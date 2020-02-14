@@ -46,12 +46,12 @@ devDependencies:
   react-styleguidist: 10.6.2_795ee8ea8b65a19114ed1863ffc07e34
   sass-loader: 8.0.2_node-sass@4.13.1+webpack@4.41.6
   style-loader: 1.1.3_webpack@4.41.6
-  stylelint: 13.1.0
-  stylelint-config-prettier: 8.0.1_stylelint@13.1.0
-  stylelint-config-recommended: 3.0.0_stylelint@13.1.0
-  stylelint-config-recommended-scss: 4.2.0_4acc56e3754bcd7ce8ec97a1dc4920b3
-  stylelint-prettier: 1.1.2_prettier@1.19.1+stylelint@13.1.0
-  stylelint-scss: 3.14.2_stylelint@13.1.0
+  stylelint: 13.2.0
+  stylelint-config-prettier: 8.0.1_stylelint@13.2.0
+  stylelint-config-recommended: 3.0.0_stylelint@13.2.0
+  stylelint-config-recommended-scss: 4.2.0_bec78bf8a29c3b5d3fa9ad12c9ef76d4
+  stylelint-prettier: 1.1.2_prettier@1.19.1+stylelint@13.2.0
+  stylelint-scss: 3.14.2_stylelint@13.2.0
   typescript: 3.7.5
   webpack: 4.41.6_webpack@4.41.6
   webpack-cli: 3.3.11_webpack@4.41.6
@@ -1502,7 +1502,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/+CRPXpBDpo2RK9C68N3b2cOvO0Cf5B9aPijHsoDQTHivnGSObdOF2BRQOYjojWTDy6nQvMjmqRXIxH55VjxxA==
-  /@types/babel__core/7.1.3:
+  /@types/babel__core/7.1.4:
     dependencies:
       '@babel/parser': 7.8.4
       '@babel/types': 7.8.3
@@ -1511,7 +1511,7 @@ packages:
       '@types/babel__traverse': 7.0.8
     dev: true
     resolution:
-      integrity: sha512-8fBo0UR2CcwWxeX7WIIgJ7lXjasFxoYgRnFHUj+hRvKkpiBJbxhdAPTCY6/ZKM0uxANFVzt4yObSLuTiTnazDA==
+      integrity: sha512-c/5MuRz5HM4aizqL5ViYfW4iEnmfPcfbH4Xa6GgLT21dMc1NGeNnuS6egHheOmP+kCJ9CAzC4pv4SDCWTnRkbg==
   /@types/babel__generator/7.6.1:
     dependencies:
       '@babel/types': 7.8.3
@@ -1603,7 +1603,7 @@ packages:
   /@types/react/16.9.19:
     dependencies:
       '@types/prop-types': 15.7.3
-      csstype: 2.6.8
+      csstype: 2.6.9
     resolution:
       integrity: sha512-LJV97//H+zqKWMms0kvxaKYJDG05U2TtQB3chRLF8MPNs+MQh/H1aGlyDUxjaHvu08EAGerdX2z4LTBc7ns77A==
   /@types/sizzle/2.3.2:
@@ -2411,7 +2411,7 @@ packages:
       '@babel/core': 7.8.4
       '@jest/transform': 24.9.0
       '@jest/types': 24.9.0
-      '@types/babel__core': 7.1.3
+      '@types/babel__core': 7.1.4
       babel-plugin-istanbul: 5.2.0
       babel-preset-jest: 24.9.0_@babel+core@7.8.4
       chalk: 2.4.2
@@ -2428,7 +2428,7 @@ packages:
       '@babel/core': 7.8.4
       '@jest/transform': 25.1.0
       '@jest/types': 25.1.0
-      '@types/babel__core': 7.1.3
+      '@types/babel__core': 7.1.4
       babel-plugin-istanbul: 6.0.0
       babel-preset-jest: 25.1.0_@babel+core@7.8.4
       chalk: 3.0.0
@@ -3688,9 +3688,9 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-sEb3XFPx3jNnCAMtqrXPDeSgQr+jojtCeNf8cvMNMh1cG970+lljssvQDzPq6lmmJu2Vhqood/gtEomBiHOGnA==
-  /csstype/2.6.8:
+  /csstype/2.6.9:
     resolution:
-      integrity: sha512-msVS9qTuMT5zwAGCVm4mxfrZ18BNc6Csd0oJAtiFMZ1FAx1CCvy2+5MDmYoix63LM/6NDbNtodCiGYGmFgO0dA==
+      integrity: sha512-xz39Sb4+OaTsULgUERcCk+TJj8ylkL4aSVDQiX/ksxbELSqwkgt4d4RD7fovIdgJGSuNYqwZEiVjYY5l0ask+Q==
   /currently-unhandled/0.4.1:
     dependencies:
       array-find-index: 1.0.2
@@ -4111,14 +4111,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==
-  /dot-prop/4.2.0:
-    dependencies:
-      is-obj: 1.0.1
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
   /duplexer/0.1.1:
     dev: true
     resolution:
@@ -5223,6 +5215,8 @@ packages:
     engines:
       node: '>=4.0'
     optional: true
+    os:
+      - darwin
     requiresBuild: true
     resolution:
       integrity: sha512-+ux3lx6peh0BpvY0JebGyZoiR4D+oYzdPZMKJwkZ+sFkNJzpL7tXc/wehS49gUAxg3tmMHPHZkA8JU2rhhgDHw==
@@ -5231,6 +5225,8 @@ packages:
     engines:
       node: ^8.16.0 || ^10.6.0 || >=11.0.0
     optional: true
+    os:
+      - darwin
     resolution:
       integrity: sha512-R4wDiBwZ0KzpgOWetKDug1FZcYhqYnUYKtfZYt4mD5SBz76q0KR4Q9o7GIPamsVPGmW3EYPPJ0dOOjvx32ldZA==
   /fstream/1.0.12:
@@ -7156,6 +7152,9 @@ packages:
       node: '>=6'
     peerDependencies:
       jest-resolve: '*'
+    peerDependenciesMeta:
+      jest-resolve:
+        optional: true
     resolution:
       integrity: sha512-pgFw2tm54fzgYvc/OHrnysABEObZCUNFnhjoRjaVOCN8NYc032/gVjPaHD4Aq6ApkSieWtfKAFQtmDKAmhupnQ==
   /jest-pnp-resolver/1.2.1_jest-resolve@25.1.0:
@@ -7166,6 +7165,9 @@ packages:
       node: '>=6'
     peerDependencies:
       jest-resolve: '*'
+    peerDependenciesMeta:
+      jest-resolve:
+        optional: true
     resolution:
       integrity: sha512-pgFw2tm54fzgYvc/OHrnysABEObZCUNFnhjoRjaVOCN8NYc032/gVjPaHD4Aq6ApkSieWtfKAFQtmDKAmhupnQ==
   /jest-regex-util/24.9.0:
@@ -7721,7 +7723,7 @@ packages:
   /jss/10.0.4:
     dependencies:
       '@babel/runtime': 7.8.4
-      csstype: 2.6.8
+      csstype: 2.6.9
       is-in-browser: 1.1.3
       tiny-warning: 1.0.3
     dev: true
@@ -8251,7 +8253,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-cstmi0JSKCkKu/qFaJJYcwioAfs=
-  /meow/6.0.0:
+  /meow/6.0.1:
     dependencies:
       '@types/minimist': 1.2.0
       camelcase-keys: 6.1.2
@@ -8268,7 +8270,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-x4rYsjigPBDAxY+BGuK83YLhUIqui5wYyZoqb6QJCUOs+0fiYq+i/NV4Jt8OgIfObZFxG9iTyvLDu4UTohGTFw==
+      integrity: sha512-kxGTFgT/b7/oSRSQsJ0qsT5IMU+bgZ1eAdSA3kIV7onkW0QWo/hL5RbGlMfvBjHJKPE1LaPX0kdecYFiqYWjUw==
   /merge-descriptors/1.0.1:
     dev: true
     resolution:
@@ -9639,16 +9641,6 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-um9zdGKaDZirMm+kZFKKVsnKPF7zF7qBAtIfTSnZXD1jZ0JNZIxdB6TxQOjCnlSzLRInVl2v3YdBh/M881C4ug==
-  /postcss-selector-parser/3.1.1:
-    dependencies:
-      dot-prop: 4.2.0
-      indexes-of: 1.0.1
-      uniq: 1.0.1
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-T4dfSvsMllc9XPTXQBGu4lCn6GU=
   /postcss-selector-parser/6.0.2:
     dependencies:
       cssesc: 3.0.0
@@ -9979,7 +9971,7 @@ packages:
       loader-utils: 1.2.3
       open: 6.4.0
       pkg-up: 2.0.0
-      react-error-overlay: 6.0.5
+      react-error-overlay: 6.0.6
       recursive-readdir: 2.2.2
       shell-quote: 1.7.2
       sockjs-client: 1.4.0
@@ -10031,10 +10023,10 @@ packages:
       react: ^16.0.0
     resolution:
       integrity: sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
-  /react-error-overlay/6.0.5:
+  /react-error-overlay/6.0.6:
     dev: true
     resolution:
-      integrity: sha512-+DMR2k5c6BqMDSMF8hLH0vYKtKTeikiFW+fj0LClN+XZg4N9b8QUAdHC62CGWNLTi/gnuuemNcNcTFrCvK1f+A==
+      integrity: sha512-Yzpno3enVzSrSCnnljmr4b/2KUQSMZaPuqmS26t9k4nW7uwJk6STWmH9heNjPuvqUTO3jOSPkHoKgO4+Dw7uIw==
   /react-group/3.0.2_react@16.12.0:
     dependencies:
       prop-types: 15.7.2
@@ -10179,7 +10171,7 @@ packages:
       recast: 0.18.5
       remark: 11.0.2
       strip-html-comments: 1.0.0
-      terser-webpack-plugin: 2.3.4_webpack@4.41.6
+      terser-webpack-plugin: 2.3.5_webpack@4.41.6
       to-ast: 1.0.0
       type-detect: 4.0.8
       unist-util-visit: 2.0.1
@@ -11798,9 +11790,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
-  /stylelint-config-prettier/8.0.1_stylelint@13.1.0:
+  /stylelint-config-prettier/8.0.1_stylelint@13.2.0:
     dependencies:
-      stylelint: 13.1.0
+      stylelint: 13.2.0
     dev: true
     engines:
       node: '>= 6'
@@ -11810,30 +11802,30 @@ packages:
       stylelint: '>=11.0.0'
     resolution:
       integrity: sha512-RcjNW7MUaNVqONhJH4+rtlAE3ow/9SsAM0YWV0Lgu3dbTKdWTa/pQXRdFWgoHWpzUKn+9oBKR5x8JdH+20wmgw==
-  /stylelint-config-recommended-scss/4.2.0_4acc56e3754bcd7ce8ec97a1dc4920b3:
+  /stylelint-config-recommended-scss/4.2.0_bec78bf8a29c3b5d3fa9ad12c9ef76d4:
     dependencies:
-      stylelint: 13.1.0
-      stylelint-config-recommended: 3.0.0_stylelint@13.1.0
-      stylelint-scss: 3.14.2_stylelint@13.1.0
+      stylelint: 13.2.0
+      stylelint-config-recommended: 3.0.0_stylelint@13.2.0
+      stylelint-scss: 3.14.2_stylelint@13.2.0
     dev: true
     peerDependencies:
       stylelint: ^10.1.0 || ^11.0.0 || ^12.0.0 || ^13.0.0
       stylelint-scss: ^3.0.0
     resolution:
       integrity: sha512-4bI5BYbabo/GCQ6LbRZx/ZlVkK65a1jivNNsD+ix/Lw0U3iAch+jQcvliGnnAX8SUPaZ0UqzNVNNAF3urswa7g==
-  /stylelint-config-recommended/3.0.0_stylelint@13.1.0:
+  /stylelint-config-recommended/3.0.0_stylelint@13.2.0:
     dependencies:
-      stylelint: 13.1.0
+      stylelint: 13.2.0
     dev: true
     peerDependencies:
       stylelint: '>=10.1.0'
     resolution:
       integrity: sha512-F6yTRuc06xr1h5Qw/ykb2LuFynJ2IxkKfCMf+1xqPffkxh0S09Zc902XCffcsw/XMFq/OzQ1w54fLIDtmRNHnQ==
-  /stylelint-prettier/1.1.2_prettier@1.19.1+stylelint@13.1.0:
+  /stylelint-prettier/1.1.2_prettier@1.19.1+stylelint@13.2.0:
     dependencies:
       prettier: 1.19.1
       prettier-linter-helpers: 1.0.0
-      stylelint: 13.1.0
+      stylelint: 13.2.0
     dev: true
     engines:
       node: '>=6'
@@ -11842,14 +11834,14 @@ packages:
       stylelint: '>= 9.2.1'
     resolution:
       integrity: sha512-8QZ+EtBpMCXYB6cY0hNE3aCDKMySIx4Q8/malLaqgU/KXXa6Cj2KK8ulG1AJvUMD5XSSP8rOotqaCzR/BW6qAA==
-  /stylelint-scss/3.14.2_stylelint@13.1.0:
+  /stylelint-scss/3.14.2_stylelint@13.2.0:
     dependencies:
       lodash: 4.17.15
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.2
       postcss-value-parser: 4.0.2
-      stylelint: 13.1.0
+      stylelint: 13.2.0
     dev: true
     engines:
       node: '>=8'
@@ -11857,7 +11849,7 @@ packages:
       stylelint: ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0
     resolution:
       integrity: sha512-59/BkIEWyFoORiejDIQB2P2kmg0KcqMn7wtj1y5sRvS4N+Qh+Ng3hbKelOzgS+OM2Ezbai0uEev8xckXxkh9TQ==
-  /stylelint/13.1.0:
+  /stylelint/13.2.0:
     dependencies:
       autoprefixer: 9.7.4
       balanced-match: 1.0.0
@@ -11879,7 +11871,7 @@ packages:
       lodash: 4.17.15
       log-symbols: 3.0.0
       mathml-tag-names: 2.1.3
-      meow: 6.0.0
+      meow: 6.0.1
       micromatch: 4.0.2
       normalize-selector: 0.2.0
       postcss: 7.0.26
@@ -11893,7 +11885,7 @@ packages:
       postcss-safe-parser: 4.0.2
       postcss-sass: 0.4.2
       postcss-scss: 2.0.0
-      postcss-selector-parser: 3.1.1
+      postcss-selector-parser: 6.0.2
       postcss-syntax: 0.36.2_postcss@7.0.26
       postcss-value-parser: 4.0.2
       resolve-from: 5.0.0
@@ -11910,7 +11902,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-Ei+nCSQTyZYrsLSUIxq48/QfzCQD9r9sQiBqy7Z4IpIMcj+E0R6b0CHrSFeE7jNgREpBfJKJd6DpstuDrwUiew==
+      integrity: sha512-isf31yjkm0DQesx+Yk1b/WQpFkf1MicwaAVR22Hprx9HRFGhhEkWdrVCyrkK6HFymL0rhzynG97Tu53q/WCsAg==
   /sugarss/2.0.0:
     dependencies:
       postcss: 7.0.26
@@ -12022,7 +12014,7 @@ packages:
       webpack: ^4.0.0
     resolution:
       integrity: sha512-QMxecFz/gHQwteWwSo5nTc6UaICqN1bMedC5sMtUc7y3Ha3Q8y6ZO0iCR8pq4RJC8Hjf0FEPEHZqcMB/+DFCrA==
-  /terser-webpack-plugin/2.3.4_webpack@4.41.6:
+  /terser-webpack-plugin/2.3.5_webpack@4.41.6:
     dependencies:
       cacache: 13.0.1
       find-cache-dir: 3.2.0
@@ -12040,7 +12032,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     resolution:
-      integrity: sha512-Nv96Nws2R2nrFOpbzF6IxRDpIkkIfmhvOws+IqMvYdFLO7o6wAILWFKONFgaYy8+T4LVz77DQW0f7wOeDEAjrg==
+      integrity: sha512-WlWksUoq+E4+JlJ+h+U+QUzXpcsMSSNXkDy9lBVkSqDn1w23Gg29L/ary9GeJVYCGiNJJX7LnVc4bwL1N3/g1w==
   /terser/4.6.3:
     dependencies:
       commander: 2.20.3
@@ -13315,7 +13307,7 @@ specifiers:
   reactstrap: ^8.4.1
   sass-loader: ^8.0.2
   style-loader: ^1.1.3
-  stylelint: ^13.1.0
+  stylelint: ^13.2.0
   stylelint-config-prettier: ^8.0.1
   stylelint-config-recommended: ^3.0.0
   stylelint-config-recommended-scss: ^4.2.0
