@@ -3,7 +3,7 @@
     // target latest version of ECMAScript
     "target": "esnext",
     // path to output directory
-    "outDir": "./dist/",
+    "outDir": "dist",
     // enable strict null checks as a best practice
     "strictNullChecks": true,
     // search under node_modules for non-relative imports
@@ -18,7 +18,7 @@
     "esModuleInterop": true,
     // use typescript to transpile jsx to js
     "jsx": "react",
-    "baseUrl": "./src/",
+    "baseUrl": "src",
     // specify module code generation
     "module": "es6",
     "removeComments": true,
@@ -28,6 +28,17 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true
-  }
+    "importHelpers": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
 }
