@@ -7,8 +7,8 @@ describe('Display', () => {
     expect(shallow(<App />));
   });
 
-  it('displays "Hello World!"', () => {
+  it('displays "Hello World"', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find('h1').text()).toEqual('Hello World!');
+    expect(wrapper.find('h1').text()).toEqual('Hello World');
   });
 });
