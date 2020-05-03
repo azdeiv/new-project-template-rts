@@ -2,6 +2,7 @@
   "extends": [
     "stylelint-config-recommended",
     "stylelint-config-recommended-scss",
+    "stylelint-a11y/recommended",
     "stylelint-prettier/recommended"
   ]
 }

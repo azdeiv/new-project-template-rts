@@ -6,36 +6,36 @@ module.exports = {
   entry: './src/index.tsx',
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'index.html')
+      template: path.resolve(__dirname, 'src', 'index.html'),
     }),
     new CleanWebpackPlugin({
       dry: false,
       verbose: true,
       cleanStaleWebpackAssets: true,
-      protectWebpackAssets: true
-    })
+      protectWebpackAssets: true,
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.html$/,
-        use: 'html-loader'
+        use: 'html-loader',
       },
       {
         test: /\.css$/,
         include: /node_modules/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(js|ts|tsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
-      }
-    ]
+        use: 'babel-loader',
+      },
+    ],
   },
   resolve: {
     descriptionFiles: ['package.json'],
@@ -44,17 +44,17 @@ module.exports = {
       styles: path.resolve(__dirname, 'styles/'),
       components: path.resolve(__dirname, 'src/components/'),
       container: path.resolve(__dirname, 'src/components/container/'),
-      presentation: path.resolve(__dirname, 'src/components/presentation/')
-    }
+      presentation: path.resolve(__dirname, 'src/components/presentation/'),
+    },
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.[hash].js'
+    filename: 'bundle.[hash].js',
   },
   devtool: 'hidden-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
-  }
+    port: 9000,
+  },
 };
