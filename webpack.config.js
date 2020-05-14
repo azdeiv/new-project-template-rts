@@ -1,16 +1,19 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractCSSChunksPlugin = require('extract-css-chunks-webpack-plugin');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
-const isProd = process.env.NODE_ENV !== 'production';
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: './src/index.tsx',
   optimization: {
+    usedExports: true,
     splitChunks: {
       chunks: 'all',
     },
@@ -20,31 +23,11 @@ module.exports = {
         NODE_ENV: process.env.NODE_ENV || 'development',
         PUBLIC_URL: '/path/to/public/dir',
       }),
-      new HtmlWebpackPlugin(
-        Object.assign(
-          {},
-          {
-            inject: true,
-            template: path.resolve(__dirname, 'src', 'index.html'),
-          },
-          isProd
-            ? {
-                minify: {
-                  removeComments: true,
-                  collapseWhitespace: true,
-                  removeRedundantAttributes: true,
-                  useShortDoctype: true,
-                  removeEmptyAttributes: true,
-                  removeStyleLinkTypeAttributes: true,
-                  keepClosingSlash: true,
-                  minifyJS: true,
-                  minifyCSS: true,
-                  minifyURLs: true,
-                },
-              }
-            : undefined
-        )
-      ),
+      new BundleAnalyzerPlugin(),
+      new HtmlWebpackPlugin({
+        inject: true,
+        template: path.resolve(__dirname, 'src', 'index.html'),
+      }),
       new CleanWebpackPlugin({
         dry: false,
         verbose: true,
@@ -76,8 +59,7 @@ module.exports = {
           },
         },
         parallel: true, // use multi-process parallel running for faster build speed
-        cache: true, // enable file caching,
-        sourceMap: true, // must be set to true if using source-maps in production
+        cache: true, // enable file caching
       }),
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: {
@@ -87,7 +69,7 @@ module.exports = {
           },
         },
       }),
-      new ExtractCSSChunksPlugin({
+      new MiniCSSExtractPlugin({
         filename: isProd ? '[name].[hash].css' : '[name].css',
         chunkFilename: isProd ? '[id].[hash].css' : '[id].css',
       }),
@@ -101,22 +83,16 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        include: /node_modules/,
         use: [
           {
-            loader: ExtractCSSChunksPlugin.loader,
+            loader: MiniCSSExtractPlugin.loader,
             options: {
-              public: '/styles',
-              hmr: process.env.NODE_ENV === 'development',
+              hmr: !isProd,
             },
           },
           'css-loader',
           'sass-loader',
         ],
-      },
-      {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(js|ts|jsx|tsx)$/,
