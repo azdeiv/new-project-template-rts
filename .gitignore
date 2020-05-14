@@ -82,8 +82,8 @@ typings/
 .nuxt
 dist
 
-# Styleguide build output
-styleguide
+# Storybook build output
+storybook-static
 
 # Gatsby files
 .cache/
