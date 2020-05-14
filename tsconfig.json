@@ -20,7 +20,7 @@
     "jsx": "react",
     "baseUrl": "src",
     // specify module code generation
-    "module": "ES6",
+    "module": "ESNext",
     "removeComments": true,
     "allowUnreachableCode": false,
     "noUnusedLocals": true,
@@ -32,12 +32,5 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["ES5", "DOM"]
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "dist",
-    "scripts",
-    "acceptance-tests",
-    "webpack"
-  ]
+  "exclude": ["node_modules", "build", "dist", "scripts", "webpack"]
 }
