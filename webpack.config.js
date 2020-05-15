@@ -1,5 +1,3 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -23,7 +21,6 @@ module.exports = {
         NODE_ENV: process.env.NODE_ENV || 'development',
         PUBLIC_URL: '/path/to/public/dir',
       }),
-      new BundleAnalyzerPlugin(),
       new HtmlWebpackPlugin({
         inject: true,
         template: path.resolve(__dirname, 'src', 'index.html'),

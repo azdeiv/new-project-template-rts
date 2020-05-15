@@ -108,3 +108,6 @@ storybook-static
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# webpack stats file
+compilation-stats.json
