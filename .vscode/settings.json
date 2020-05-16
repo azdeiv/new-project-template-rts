@@ -10,6 +10,7 @@
     "reduxjs",
     "styleguide",
     "styleguidist",
-    "stylelint"
+    "stylelint",
+    "transpiled"
   ]
 }

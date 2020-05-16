@@ -1,6 +1,9 @@
 !**/.eslintrc*
 node_modules*
+build
 dist
+coverage
+storybook-static
 *.svg
 *.ico
 *.json

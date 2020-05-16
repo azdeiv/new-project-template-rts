@@ -21,6 +21,17 @@ Formatting should be as follows:
 
 ## Change History
 
+## [0.0.2] - 2020-05-15
+
+### Added
+
+- Package: @storybook\*
+- Package: overmind
+
+### Removed
+
+- Styleguidist along with various other unnecessary libraries
+
 ## [0.0.1] - 2020-05-02
 
 ### Added
