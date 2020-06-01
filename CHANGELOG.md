@@ -21,11 +21,18 @@ Formatting should be as follows:
 
 ## Change History
 
+## [0.0.3] - 2020-05-31
+
+### Removed
+
+- Package: @storybook
+- Package: @storybook/\* addons
+
 ## [0.0.2] - 2020-05-15
 
 ### Added
 
-- Package: @storybook\*
+- Package: @storybook
 - Package: overmind
 
 ### Removed

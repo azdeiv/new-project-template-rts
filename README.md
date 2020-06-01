@@ -46,12 +46,6 @@ To adjust the formatting done with EditorConfig, please check out `.editorconfig
 
 Overmind is used for state management within the application. Please check out the `src/overmind-local` directory for development related to it.
 
-## Storybook
-
-Storybook is used for showing off demo components and also acts as a living developer guide for any custom components built out.
-
-Please check out the `.storybook` and `stories` directories for any development related to it.
-
 ## Cypress
 
 Cypress is used for testing. Please check out the `cypress` directory for any development related to it along with the `cypress.json` file for configuration.
