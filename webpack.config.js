@@ -119,14 +119,16 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    chunkFilename: '[id].[hash:8].js',
     filename: '[name].[hash:8].js',
     sourceMapFilename: '[name].[hash:8].map',
-    chunkFilename: '[id].[hash:8].js',
   },
   devtool: !isProd ? 'cheap-module-eval-source-map' : false,
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
+    historyApiFallback: true,
     port: 9000,
   },
 };
