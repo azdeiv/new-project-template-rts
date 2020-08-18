@@ -54,10 +54,8 @@
     "starter",
     "react",
     "typescript",
-    "overmind",
     "reactstrap",
-    "cypress",
-    "storybook"
+    "cypress"
   ],
   "author": "Zaid Bhura",
   "license": "MIT",
@@ -97,6 +95,7 @@
     "path": "^0.12.7",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
+    "react-is": "^16.13.1",
     "sass-loader": "^8.0.2",
     "stylelint": "^13.3.3",
     "stylelint-a11y": "^1.2.3",

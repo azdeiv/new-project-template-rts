@@ -4,7 +4,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -114,7 +114,7 @@ module.exports = {
       styles: path.resolve(__dirname, 'styles/'),
       components: path.resolve(__dirname, 'src/components/'),
       container: path.resolve(__dirname, 'src/components/container/'),
-      presentation: path.resolve(__dirname, 'src/components/presentation/'),
+      presentation: path.resolve(__dirname, 'src/presentation/'),
     },
   },
   output: {
@@ -124,7 +124,8 @@ module.exports = {
     filename: '[name].[hash:8].js',
     sourceMapFilename: '[name].[hash:8].map',
   },
-  devtool: !isProd ? 'cheap-module-eval-source-map' : false,
+  mode: !isProd ? 'development' : 'production',
+  devtool: !isProd ? 'inline-source-map' : false,
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
