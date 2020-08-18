@@ -72,6 +72,11 @@ module.exports = {
       }),
     ],
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+  },
   module: {
     rules: [
       {
@@ -113,7 +118,6 @@ module.exports = {
     alias: {
       styles: path.resolve(__dirname, 'styles/'),
       components: path.resolve(__dirname, 'src/components/'),
-      container: path.resolve(__dirname, 'src/components/container/'),
       presentation: path.resolve(__dirname, 'src/presentation/'),
     },
   },

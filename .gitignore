@@ -111,3 +111,6 @@ storybook-static
 
 # webpack stats file
 compilation-stats.json
+
+# styleguidist output
+styleguide/
