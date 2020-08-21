@@ -24,9 +24,15 @@ If VSCode/VSCodium is being used for development, it is recommended to download 
 
 `style-lint`: Runs stylelint on the specified directory without emitting (used during deployment)
 
+`test`: Opens Cypress for testing the application
+
+`styleguide`: Runs Styleguidist locally
+
+`styleguidist:build`: Creates a Styleguidist build for deployment to dev/prod servers
+
 ## Base application
 
-The base application includes React, Typescript, reactstrap, Overmind, and Font Awesome.
+The base application includes React, Typescript, reactstrap, Recoil, and Font Awesome.
 
 The `@loadable/component` library also has been included as a part of this base application if dynamic loading is desired.
 
@@ -42,15 +48,15 @@ For linter adjustments, please check out `.eslintrc`, `.eslintignore`, `.prettie
 
 To adjust the formatting done with EditorConfig, please check out `.editorconfig`.
 
-## Overmind
+## Recoil
 
-Overmind is used for state management within the application. Please check out the `src/overmind-local` directory for development related to it.
+Recoil is used for state management within the application.
 
-## Storybook
+## Styleguidist
 
-Storybook is used for showing off demo components and also acts as a living developer guide for any custom components built out.
+Styleguidist is used for showing off demo components and also acts as a living developer guide for any custom components built out.
 
-Please check out the `.storybook` and `stories` directories for any development related to it.
+Please check out the `docs` directory along with the `.md` files in `src` for any development related to it.
 
 ## Cypress
 
