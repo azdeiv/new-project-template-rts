@@ -2,6 +2,8 @@
   "compilerOptions": {
     // enable strictest settings
     "strict": true,
+    // allows import similar to regular jsx
+    "allowSyntheticDefaultImports": true,
     // target compiled version to ES6
     "target": "ESNext",
     // path to output directory
@@ -30,5 +32,5 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["ES5", "ES6", "DOM"]
   },
-  "exclude": ["node_modules", "build", "dist", "scripts", "webpack", "coverage"]
+  "exclude": ["node_modules", "build", "dist", "scripts"]
 }

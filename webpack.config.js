@@ -1,10 +1,12 @@
+// webpack.config.js
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -72,6 +74,11 @@ module.exports = {
       }),
     ],
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+  },
   module: {
     rules: [
       {
@@ -113,20 +120,22 @@ module.exports = {
     alias: {
       styles: path.resolve(__dirname, 'styles/'),
       components: path.resolve(__dirname, 'src/components/'),
-      container: path.resolve(__dirname, 'src/components/container/'),
-      presentation: path.resolve(__dirname, 'src/components/presentation/'),
+      presentation: path.resolve(__dirname, 'src/presentation/'),
     },
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    chunkFilename: '[id].[hash:8].js',
     filename: '[name].[hash:8].js',
     sourceMapFilename: '[name].[hash:8].map',
-    chunkFilename: '[id].[hash:8].js',
   },
-  devtool: !isProd ? 'cheap-module-eval-source-map' : false,
+  mode: !isProd ? 'development' : 'production',
+  devtool: !isProd ? 'inline-source-map' : false,
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
+    historyApiFallback: true,
     port: 9000,
   },
 };
