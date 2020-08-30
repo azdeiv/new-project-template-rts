@@ -17,8 +17,6 @@ devDependencies:
   '@babel/preset-env': 7.9.6_@babel+core@7.9.6
   '@babel/preset-react': 7.9.4_@babel+core@7.9.6
   '@babel/preset-typescript': 7.9.0_@babel+core@7.9.6
-  '@types/react': 16.9.48
-  '@types/react-bootstrap': 0.32.22
   '@types/react-dom': 16.9.8
   '@types/react-router-dom': 5.1.5
   '@typescript-eslint/eslint-plugin': 2.33.0_3ac210dae6de5ddc23c7c35018f15506
@@ -1498,12 +1496,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
-  /@types/react-bootstrap/0.32.22:
-    dependencies:
-      '@types/react': 16.9.48
-    dev: true
-    resolution:
-      integrity: sha512-pjUVcJzogMxns3lbvMqnnU+I8EOYxl3aI13tS2vvRm0RdAe1rs7Ds/VZA29GI6p8p3Un6NqKUpW3+dgwAjyzxg==
   /@types/react-dom/16.9.8:
     dependencies:
       '@types/react': 16.9.35
@@ -1527,7 +1519,7 @@ packages:
       integrity: sha512-2ouP76VQafKjtuc0ShpwUebhHwJo0G6rhahW9Pb8au3tQTjYXd2jta4wv6U2tGLR/I42yuG00+UXjNYY0dTzbg==
   /@types/react-transition-group/4.4.0:
     dependencies:
-      '@types/react': 16.9.48
+      '@types/react': 16.9.35
     dev: false
     resolution:
       integrity: sha512-/QfLHGpu+2fQOqQaXh8MG9q03bFENooTb/it4jr5kKaZlDQfWvjqWZg48AwzPVMBHlRuTRAY7hRHCEOXz5kV6w==
@@ -1537,12 +1529,6 @@ packages:
       csstype: 2.6.10
     resolution:
       integrity: sha512-q0n0SsWcGc8nDqH2GJfWQWUOmZSJhXV64CjVN5SvcNti3TdEaA3AH0D8DwNmMdzjMAC/78tB8nAZIlV8yTz+zQ==
-  /@types/react/16.9.48:
-    dependencies:
-      '@types/prop-types': 15.7.3
-      csstype: 3.0.3
-    resolution:
-      integrity: sha512-4ykBVswgYitPGMXFRxJCHkxJDU2rjfU3/zw67f8+dB7sNdVJXsrwqoYxz/stkAucymnEEbRPFmX7Ce5Mc/kJCw==
   /@types/sinon-chai/3.2.3:
     dependencies:
       '@types/chai': 4.2.7
@@ -3599,12 +3585,8 @@ packages:
     resolution:
       integrity: sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
   /csstype/3.0.2:
-    dev: true
     resolution:
       integrity: sha512-ofovWglpqoqbfLNOTBNZLSbMuGrblAf1efvvArGKOZMBrIoJeu5UsAipQolkijtyQx5MtAzT/J9IHj/CEY1mJw==
-  /csstype/3.0.3:
-    resolution:
-      integrity: sha512-jPl+wbWPOWJ7SXsWyqGRk3lGecbar0Cb0OvZF/r/ZU011R4YqiRehgkQ9p4eQfo9DSDLqLL3wHwfxeJiuIsNag==
   /currently-unhandled/0.4.1:
     dependencies:
       array-find-index: 1.0.2
@@ -3935,7 +3917,7 @@ packages:
   /dom-helpers/5.2.0:
     dependencies:
       '@babel/runtime': 7.11.2
-      csstype: 3.0.3
+      csstype: 3.0.2
     dev: false
     resolution:
       integrity: sha512-Ru5o9+V8CpunKnz5LGgWXkmrH/20cGKwcHwS4m73zIvs54CN9epEmT/HLqFJW3kXpakAFkEdzgy1hzlJe3E4OQ==
@@ -11394,7 +11376,7 @@ packages:
   /uncontrollable/7.1.1_react@16.13.1:
     dependencies:
       '@babel/runtime': 7.11.2
-      '@types/react': 16.9.48
+      '@types/react': 16.9.35
       invariant: 2.2.4
       react: 16.13.1
       react-lifecycles-compat: 3.0.4
@@ -12191,8 +12173,6 @@ specifiers:
   '@fortawesome/free-solid-svg-icons': ^5.13.0
   '@fortawesome/react-fontawesome': ^0.1.9
   '@loadable/component': ^5.12.0
-  '@types/react': ^16.9.48
-  '@types/react-bootstrap': ^0.32.22
   '@types/react-dom': ^16.9.8
   '@types/react-router-dom': ^5.1.5
   '@typescript-eslint/eslint-plugin': ^2.33.0
