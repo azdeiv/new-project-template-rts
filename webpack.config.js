@@ -135,9 +135,12 @@ module.exports = {
       '.json',
     ],
     alias: {
+      atoms: path.resolve(__dirname, 'src/components/atoms/'),
+      molecules: path.resolve(__dirname, 'src/components/molecules'),
+      organisms: path.resolve(__dirname, 'src/components/organisms'),
+      templates: path.resolve(__dirname, 'src/templates'),
+      pages: path.resolve(__dirname, 'src/pages'),
       styles: path.resolve(__dirname, 'styles/'),
-      components: path.resolve(__dirname, 'src/components/'),
-      presentation: path.resolve(__dirname, 'src/presentation/'),
     },
   },
   output: {
