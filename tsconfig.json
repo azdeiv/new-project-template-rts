@@ -1,33 +1,37 @@
 {
   "compilerOptions": {
-    // target latest version of ECMAScript
-    "target": "esnext",
+    // enable strictest settings
+    "strict": true,
+    // allows import similar to regular jsx
+    "allowSyntheticDefaultImports": true,
+    // target compiled version to ES6
+    "target": "ESNext",
     // path to output directory
-    "outDir": "./dist/",
-    // enable strict null checks as a best practice
-    "strictNullChecks": true,
+    "outDir": "dist",
     // search under node_modules for non-relative imports
     "moduleResolution": "node",
     // disable to ensure all coded is TypeScript standard
     "allowJs": false,
     // don't emit; allow Babel to transform files
     "noEmit": true,
-    // enable strictest settings like alwaysStrict, strictNullChecks, noImplicitAny, etc
-    "strict": true,
     // import non-ES modules as default imports
     "esModuleInterop": true,
     // use typescript to transpile jsx to js
     "jsx": "react",
-    "baseUrl": "./src/",
+    "baseUrl": "src",
     // specify module code generation
-    "module": "es6",
+    "module": "ESNext",
     "removeComments": true,
     "allowUnreachableCode": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitAny": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true
-  }
+    "importHelpers": true,
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["ES5", "ES6", "DOM"]
+  },
+  "exclude": ["node_modules", "build", "dist", "scripts"]
 }

@@ -1,10 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 
 class App extends React.PureComponent {
   public render(): React.ReactNode {
     return (
       <div>
-        <h1>Hello World!</h1>
+        <h1>Hello World</h1>
       </div>
     );
   }

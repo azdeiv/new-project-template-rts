@@ -6,9 +6,11 @@
     "editorconfig",
     "fontawesome",
     "fortawesome",
+    "overmind",
     "reduxjs",
     "styleguide",
     "styleguidist",
-    "stylelint"
+    "stylelint",
+    "transpiled"
   ]
 }
